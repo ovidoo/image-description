@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { computerVision, isConfigured as ComputerVisionIsConfigured } from './azure-cognitiveservices-computervision';
-
+import {TextToSpeech} from './TextToSpeech';
 function App() {
 
   const [fileSelected, setFileSelected] = useState(null);
@@ -72,7 +72,10 @@ function App() {
   function Render() {
     const ready = ComputerVisionIsConfigured();
     if (ready) {
-      return <Analyze />;
+      return <div>
+        <Analyze />
+        <TextToSpeech />
+      </div>;
     }
     return <CantAnalyze />;
   }

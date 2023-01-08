@@ -1,0 +1,14 @@
+{
+    "cognitiveService": {
+        "key1": "23851e01cd3b46e78836e80e9c8bc0fe", 
+        "key2": "60418d817311455183dbad8295ff2b52",
+        "endpoint": "https://image-api.cognitiveservices.azure.com/",
+        "region": "uksouth"
+    },
+    "speechService": {
+        "key1": "3e97702b42de4f0183efa2fcb0a0ec98",
+        "key2": "089e28a4f21043d1b5abb2db09ce790b",
+        "region": "eastus",
+        "endpoint": "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetoken"
+    }
+}
